@@ -1,7 +1,4 @@
-/*
-  Celadon Template
-  https://templatemo.com/tm-633-celadon
-*/
+
 
 (function() {
     "use strict";
@@ -503,12 +500,15 @@
         });
         ho.observe(hero);
     }
-    document.getElementById("up").addEventListener("click", function() {
-        window.scrollTo({
-            top: 0,
-            behavior: reduce ? "auto" : "smooth"
+    var up = document.getElementById("up");
+    if (up) {
+        up.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: reduce ? "auto" : "smooth"
+            });
         });
-    });
+    }
 
     /* ---------- hero parallax, decorative layers only ---------- */
     var stage = document.querySelector(".stage");
