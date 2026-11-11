@@ -363,6 +363,14 @@ section {
     width: 100%
 }
 
+.consultation-btn {
+    font-size: 1.5rem;
+    display: flex;
+    width: 80vw;
+    margin-left: calc((100% - 80vw) / 2);
+    margin-right: auto
+}
+
 @media (hover:none) {
     .btn:hover {
         transform: none;
@@ -2207,9 +2215,6 @@ body.lock .up {
 
     .clinic-copy .consultation-btn {
         display: flex;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto
     }
 
     .clinic-benefits {
